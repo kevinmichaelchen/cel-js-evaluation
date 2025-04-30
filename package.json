@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "vitest",
+    "typecheck": "tsc --noEmit"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +18,8 @@
     "cel-js": "^0.6.0"
   },
   "devDependencies": {
+    "@tsconfig/node18": "^18.2.4",
+    "typescript": "^5.8.3",
     "vitest": "^3.1.2"
   }
 }

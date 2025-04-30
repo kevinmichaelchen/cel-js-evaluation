@@ -84,7 +84,7 @@ const testCases = [
   },
   {
     name: 'String interpolation',
-    expr: '"id-${uuid}".matches('^id-[a-f0-9]{8}$')',
+    expr: `"id-\${uuid}".matches('^id-[a-f0-9]{8}$')`,
     vars: { uuid: 'deadbeef' },
     expected: true,
   },
