@@ -14,8 +14,17 @@ ecosystem.
 | [`cel-js`][cel-js]                                     | 15               | 30          | 50.0%         |
 | [`jafaircl/cel`][jafaircl-cel]                         | 10               | 30          | 33.3%         |
 
+[cel-rust]: https://github.com/clarkmcc/cel-rust
 [cel-rust-ts]:
   https://www.npmjs.com/package/@kevinmichaelchen/cel-typescript-core
 [cel-javascript]: https://www.npmjs.com/package/@gresb/cel-javascript
 [cel-js]: https://www.npmjs.com/package/cel-js
 [jafaircl-cel]: https://github.com/jafaircl/cel
+
+## Recommendation
+
+Based on the conformance summary, we recommend using
+[`@kevinmichaelchen/cel-typescript-core`][cel-rust-ts] for CEL evaluation in the
+JS ecosystem. Its underlying implementation, [cel-rust][cel-rust], is vastly
+more feature-complete than alternatives. It checks most boxes and passes most
+tests. It's actively maintained.
