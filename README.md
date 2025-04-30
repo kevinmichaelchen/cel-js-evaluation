@@ -9,10 +9,10 @@ ecosystem.
 
 | Library                                                | Conformant Tests | Total Tests | Conformance % |
 | ------------------------------------------------------ | ---------------- | ----------- | ------------- |
-| [`@gresb/cel-javascript`][cel-javascript]              | 9                | 30          | 30.0%         |
-| [`@kevinmichaelchen/cel-typescript-core`][cel-rust-ts] | 25               | 30          | 83.3%         |
-| [`cel-js`][cel-js]                                     | 15               | 30          | 50.0%         |
-| [`jafaircl/cel`][jafaircl-cel]                         | 10               | 30          | 33.3%         |
+| [`@gresb/cel-javascript`][cel-javascript]              | 8                | 32          | 25.0%         |
+| [`@kevinmichaelchen/cel-typescript-core`][cel-rust-ts] | 28               | 32          | 87.5%         |
+| [`cel-js`][cel-js]                                     | 14               | 32          | 43.8%         |
+| [`jafaircl/cel`][jafaircl-cel]                         | 13               | 32          | 40.6%         |
 
 [cel-rust]: https://github.com/clarkmcc/cel-rust
 [cel-rust-ts]:

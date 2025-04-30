@@ -15,11 +15,11 @@ importers:
         specifier: ^0.0.20
         version: 0.0.20
       '@kevinmichaelchen/cel-typescript-core':
-        specifier: ^0.0.15
-        version: 0.0.15
+        specifier: 0.0.16
+        version: 0.0.16
       '@kevinmichaelchen/cel-typescript-darwin-arm64':
-        specifier: ^0.0.15
-        version: 0.0.15
+        specifier: 0.0.16
+        version: 0.0.16
       cel-js:
         specifier: ^0.6.0
         version: 0.6.0
@@ -929,35 +929,36 @@ packages:
   '@jridgewell/trace-mapping@0.3.9':
     resolution: {integrity: sha512-3Belt6tdc8bPgAtbcmdtNJlirVoTmEb5e2gC94PnkwEW9jI6CAHUeoG85tjWP5WquqfavoMtMwiG4P926ZKKuQ==}
 
-  '@kevinmichaelchen/cel-typescript-core@0.0.15':
-    resolution: {integrity: sha512-8bj5qIHx5wWK8oFa2HVy+ATFEIMzYUnmh0q/qcuvz8SjO6y1IhBCPMBdNo8+fB0PAQ/ZsyNeVCOPIs/OFMSr6w==}
+  '@kevinmichaelchen/cel-typescript-core@0.0.16':
+    resolution: {integrity: sha512-jgxg1etQoH1BudtSaH2wFPQGehoY2KrGEpHgJKoi78ffN7lhlDRYTwDMi8WL2PjPHBtU95aAnUjwU0BkKJMkEg==}
     engines: {node: '>=18.0.0'}
 
-  '@kevinmichaelchen/cel-typescript-darwin-arm64@0.0.15':
-    resolution: {integrity: sha512-wNTbwHkdLDNkuEj3wqr7JbQGvzgON4EC1Jv2LxqOIpWhobC7CXX4TFAm9rh8x/B2CVcr+UAGv0LgfIYnwEKwGQ==}
+  '@kevinmichaelchen/cel-typescript-darwin-arm64@0.0.16':
+    resolution: {integrity: sha512-hZKhKG7csuneheR8yqUR0uQ3Dq+g3q+42zyZywXnwS1rUwoS6nRU54pwlQ15EsTTrSQdoPXpCG0zHaR9Xe0ESg==}
     engines: {node: '>=18.0.0'}
+    cpu: [arm64]
     os: [darwin]
 
-  '@kevinmichaelchen/cel-typescript-darwin-x64@0.0.15':
-    resolution: {integrity: sha512-CwP3WeZO1+d8UVPqgqtuhSj54kYoholv+e9lB/FfCU0KHps6xNugvWTAi3oG6BpV4Pw8turdWDz2Dpfim52Pbg==}
+  '@kevinmichaelchen/cel-typescript-darwin-x64@0.0.16':
+    resolution: {integrity: sha512-A0RyxJwMoazqVMp5mZTwSD6CUTjjuiI0yyxphAOibt0Xop0yitR7yaf+wawlRsobjDu9KMwmYYslasC/EOL66Q==}
     engines: {node: '>=18.0.0'}
     cpu: [x64]
     os: [darwin]
 
-  '@kevinmichaelchen/cel-typescript-linux-arm64-gnu@0.0.15':
-    resolution: {integrity: sha512-sEL6zkcyW8oy8ntQeG2Vf1bqzGT4FxeEy0rlEy/wKuzh581rCll78JNpzi0FBGIwUcTSLXRS1qduR8AwGTS0Sw==}
+  '@kevinmichaelchen/cel-typescript-linux-arm64-gnu@0.0.16':
+    resolution: {integrity: sha512-fzJcl1epsm6+x84QZZCt1dbLiyeJtjj51s1/Pc49VruDz5fThT+aSN8W6eNbGkOZs72DCx3Quj9xh0HzD/FzCw==}
     engines: {node: '>=18.0.0'}
     cpu: [arm64]
     os: [linux]
 
-  '@kevinmichaelchen/cel-typescript-linux-x64-gnu@0.0.15':
-    resolution: {integrity: sha512-5xGmY9LoY7g6fLOA6IVS6/HtGdWLutJb8QJc9ZtNvudKgNlyUcfMuLhsKapEKdsQkH9nEQqKTKgwqFQqBkjKJg==}
+  '@kevinmichaelchen/cel-typescript-linux-x64-gnu@0.0.16':
+    resolution: {integrity: sha512-KZJlULk81SeNIsqoHCsxp7B6uhbwPyxqXS4Af11aSjsCVby7jVDUi/6MDa3mjjG2bbp4NZwmj3y+zm2onNhiVg==}
     engines: {node: '>=18.0.0'}
     cpu: [x64]
     os: [linux]
 
-  '@kevinmichaelchen/cel-typescript-win32-x64-msvc@0.0.15':
-    resolution: {integrity: sha512-HHTknNeHhYczJoDIDss6kCF09MrLL78Hdn7DJ7LygXsMZijpQcoXn/M/3QRwScwEn97R/mHK6igaZHCN5egFyg==}
+  '@kevinmichaelchen/cel-typescript-win32-x64-msvc@0.0.16':
+    resolution: {integrity: sha512-ryxS7Sv8CP6X/D6zj3jl8PkrQhJLLL24uRW1EAhmkNxNbOVaDfvur/HMadmcdZZK4aB9ZeAexNQ5AzdjCHGMjQ==}
     engines: {node: '>=18.0.0'}
     cpu: [x64]
     os: [win32]
@@ -3525,26 +3526,26 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.0
 
-  '@kevinmichaelchen/cel-typescript-core@0.0.15':
+  '@kevinmichaelchen/cel-typescript-core@0.0.16':
     optionalDependencies:
-      '@kevinmichaelchen/cel-typescript-darwin-arm64': 0.0.15
-      '@kevinmichaelchen/cel-typescript-darwin-x64': 0.0.15
-      '@kevinmichaelchen/cel-typescript-linux-arm64-gnu': 0.0.15
-      '@kevinmichaelchen/cel-typescript-linux-x64-gnu': 0.0.15
-      '@kevinmichaelchen/cel-typescript-win32-x64-msvc': 0.0.15
+      '@kevinmichaelchen/cel-typescript-darwin-arm64': 0.0.16
+      '@kevinmichaelchen/cel-typescript-darwin-x64': 0.0.16
+      '@kevinmichaelchen/cel-typescript-linux-arm64-gnu': 0.0.16
+      '@kevinmichaelchen/cel-typescript-linux-x64-gnu': 0.0.16
+      '@kevinmichaelchen/cel-typescript-win32-x64-msvc': 0.0.16
 
-  '@kevinmichaelchen/cel-typescript-darwin-arm64@0.0.15': {}
+  '@kevinmichaelchen/cel-typescript-darwin-arm64@0.0.16': {}
 
-  '@kevinmichaelchen/cel-typescript-darwin-x64@0.0.15':
+  '@kevinmichaelchen/cel-typescript-darwin-x64@0.0.16':
     optional: true
 
-  '@kevinmichaelchen/cel-typescript-linux-arm64-gnu@0.0.15':
+  '@kevinmichaelchen/cel-typescript-linux-arm64-gnu@0.0.16':
     optional: true
 
-  '@kevinmichaelchen/cel-typescript-linux-x64-gnu@0.0.15':
+  '@kevinmichaelchen/cel-typescript-linux-x64-gnu@0.0.16':
     optional: true
 
-  '@kevinmichaelchen/cel-typescript-win32-x64-msvc@0.0.15':
+  '@kevinmichaelchen/cel-typescript-win32-x64-msvc@0.0.16':
     optional: true
 
   '@microsoft/api-extractor-model@7.30.5(@types/node@22.15.3)':

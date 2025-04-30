@@ -14,8 +14,8 @@
   "dependencies": {
     "@celjs/parser": "^0.0.4",
     "@gresb/cel-javascript": "^0.0.20",
-    "@kevinmichaelchen/cel-typescript-core": "^0.0.15",
-    "@kevinmichaelchen/cel-typescript-darwin-arm64": "^0.0.15",
+    "@kevinmichaelchen/cel-typescript-core": "0.0.16",
+    "@kevinmichaelchen/cel-typescript-darwin-arm64": "0.0.16",
     "cel-js": "^0.6.0"
   },
   "devDependencies": {
