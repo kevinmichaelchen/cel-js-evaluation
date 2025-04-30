@@ -12,6 +12,7 @@
   "license": "ISC",
   "packageManager": "pnpm@10.10.0",
   "dependencies": {
+    "@celjs/parser": "^0.0.4",
     "@gresb/cel-javascript": "^0.0.20",
     "@kevinmichaelchen/cel-typescript-core": "^0.0.15",
     "@kevinmichaelchen/cel-typescript-darwin-arm64": "^0.0.15",
@@ -19,6 +20,8 @@
   },
   "devDependencies": {
     "@tsconfig/node18": "^18.2.4",
+    "prettytable": "^2.0.0",
+    "tsx": "^4.19.4",
     "typescript": "^5.8.3",
     "vitest": "^3.1.2"
   }

@@ -1,0 +1,5 @@
+This is a PNPM project that tests various libraries implementing the CEL (Common Expression Language) spec.
+
+You should use PNPM for all commands. For example, run tests with `pnpm run test`.
+
+Do not ask to run `pnpm run test`. Just go ahead and do it.
