@@ -1,5 +1,7 @@
-This is a PNPM project that tests various libraries implementing the CEL (Common Expression Language) spec.
+This is a TypeScript project that provides a conformance test suite for
+evaluating different various CEL (Common Expression Language) libraries.
 
-You should use PNPM for all commands. For example, run tests with `pnpm run test`.
+Those four libraries are documented in `README.md`.
 
-Do not ask to run `pnpm run test`. Just go ahead and do it.
+PNPM is used as the package manager. You should use `pnpm` for all commands.
+For example, run tests with `pnpm run test`.

@@ -24,6 +24,9 @@ importers:
         specifier: ^0.6.0
         version: 0.6.0
     devDependencies:
+      '@adam-rocska/markdown-table':
+        specifier: ^1.0.2
+        version: 1.0.2
       '@tsconfig/node18':
         specifier: ^18.2.4
         version: 18.2.4
@@ -41,6 +44,9 @@ importers:
         version: 3.1.2(@types/node@22.15.3)(tsx@4.19.4)
 
 packages:
+
+  '@adam-rocska/markdown-table@1.0.2':
+    resolution: {integrity: sha512-eVyPuyVlZq6v69xbod1OjzkCsPPq3zBrqkZNcD23Q3K7/33zIzfz4U6nB/UVpMHnenrx6CCZPcSJUYPQoGACrA==}
 
   '@ampproject/remapping@2.3.0':
     resolution: {integrity: sha512-30iZtAPgz+LTIYoeivqYo853f02jBYSd5uGnGpkFV0M3xOt9aN73erkgYAmZU43x4VfqcnLxW9Kpg3R5LC4YYw==}
@@ -936,7 +942,6 @@ packages:
   '@kevinmichaelchen/cel-typescript-darwin-arm64@0.0.16':
     resolution: {integrity: sha512-hZKhKG7csuneheR8yqUR0uQ3Dq+g3q+42zyZywXnwS1rUwoS6nRU54pwlQ15EsTTrSQdoPXpCG0zHaR9Xe0ESg==}
     engines: {node: '>=18.0.0'}
-    cpu: [arm64]
     os: [darwin]
 
   '@kevinmichaelchen/cel-typescript-darwin-x64@0.0.16':
@@ -2586,6 +2591,8 @@ packages:
     hasBin: true
 
 snapshots:
+
+  '@adam-rocska/markdown-table@1.0.2': {}
 
   '@ampproject/remapping@2.3.0':
     dependencies:
