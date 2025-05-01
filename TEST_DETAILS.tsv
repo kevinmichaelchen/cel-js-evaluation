@@ -1,0 +1,33 @@
+Feature	Expression	@gresb/cel-javascript	@kevinmichaelchen/cel-typescript-core	cel-js	jafaircl/cel
+Checking type of int	type(42) == int	FAIL	FAIL	FAIL	FAIL
+Checking type of string	"type(""foo"") == string"	FAIL	FAIL	FAIL	FAIL
+Checking field presence	"has(msg.subfield) ? msg.subfield : ""default"""	FAIL	PASS	PASS	FAIL
+Checking field absence	"has(msg.subfield) ? msg.subfield : ""default"""	FAIL	PASS	PASS	FAIL
+Checking all elements in list	[1,2,3].all(x, x > 0)	FAIL	PASS	FAIL	PASS
+Checking any element in empty list	[].exists(x, x < 0)	FAIL	PASS	FAIL	PASS
+Checking any element in non-empty list	[1,2,-1].exists(x, x < 0)	FAIL	PASS	FAIL	PASS
+Checking key presence within object	{'a': 1, 'b': 2}.exists_one(k, k == 'c')	FAIL	PASS	FAIL	PASS
+String contains	"""hello"".contains(""ell"")"	FAIL	PASS	FAIL	PASS
+String lowerAscii - non-existent extension function	"""FOO"".lowerAscii() == ""foo"""	PASS	PASS	PASS	FAIL
+startsWith function	"""apple"".startsWith(""app"")"	FAIL	PASS	FAIL	PASS
+Ternary operator	"true ? ""yes"" : ""no"""	FAIL	PASS	PASS	PASS
+Operator precedence	"1 + 2 * 3 == 7 ? ""ok"" : ""fail"""	FAIL	PASS	PASS	PASS
+Regex match	"""hello123"".matches(""hello[0-9]+"")"	FAIL	PASS	FAIL	PASS
+Numeric overflow	9223372036854775807 + 1	FAIL	FAIL	FAIL	FAIL
+Homogeneous equality	1 == 1.0	FAIL	PASS	PASS	PASS
+Extension function (non-standard)	"""foo"".myCustomFunc()"	PASS	PASS	PASS	FAIL
+Timezone handling	"timestamp(""2020-01-01T00:00:00Z"") == timestamp(""2020-01-01T01:00:00+01:00"")"	FAIL	PASS	FAIL	FAIL
+Time - Adding a duration to a timestamp	timestamp('2023-01-01T00:00:00Z') + duration('1h')	FAIL	PASS	FAIL	FAIL
+Quantity library functions - unrecognized quantity() function	"quantity(""50Mi"").isLessThan(quantity(""100Gi""))"	PASS	PASS	PASS	FAIL
+List aggregation - unrecognized sum() function	items.map(x, x.weight).sum() == 1.0	PASS	PASS	PASS	FAIL
+List validation - unrecognized isSorted() function	names.isSorted() && indexOf('target') == 0	PASS	PASS	PASS	FAIL
+Membership test	x in [1, 2, 3] ? x : 0	FAIL	PASS	PASS	FAIL
+Dynamic typing	dyn(5) == 5u && dyn(3.14) > 3	FAIL	FAIL	FAIL	PASS
+String interpolation	"""id-{uuid}"".matches('^id-[a-f0-9]{8}$')"	FAIL	PASS	FAIL	PASS
+List filtering	[1, 2, 3].filter(x, x%2 != 0).size() == 2	FAIL	PASS	FAIL	PASS
+Map transformation - unrecognized upperAscii() function	{'a': 1, 'b': 2}.map(k, k.upperAscii())	PASS	PASS	PASS	FAIL
+Deep field access	msg.spec.template.metadata.labels['app']	FAIL	PASS	FAIL	FAIL
+Null handling - unrecognized type() function	type(null) == null_type && null == null	PASS	PASS	PASS	FAIL
+Byte encoding	"bytes(""😀"") == b""\xf0\x9f\x98\x80"""	FAIL	PASS	FAIL	FAIL
+Type conversion - unrecognized sum() function	[1.5, 2.3, 3.1].map(x, int(x)).sum()	PASS	PASS	PASS	FAIL
+Priority validation	lowPrio.map(p, p.score).max() < highPrio.min()	FAIL	PASS	FAIL	FAIL

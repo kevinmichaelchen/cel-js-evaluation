@@ -1,0 +1,5 @@
+Library	Conformant Tests	Total Tests	Conformance %
+@gresb/cel-javascript	8	32	25.0%
+@kevinmichaelchen/cel-typescript-core	28	32	87.5%
+cel-js	14	32	43.8%
+jafaircl/cel	13	32	40.6%
